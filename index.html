@@ -5,11 +5,42 @@
     <title>Meu Cantor Favorito</title>
 </head>
 <body>
-    <h1>Renato Russo</h1>
-    <img src="assets/renato_russo.jpg" alt="Imagem de Renato russo" class="renato_russo_img">
-    <br>
-    <img src="assets/legiao_urbana.jpg" alt="Imagem do grupo" class="legiao_urbana">
+    <h1 class="titulo">Renato Russo</h1>
     
+    <div class="texto">
+        <div>
+            <img src="assets/renato_russo.jpg" alt="imagem de Renato Russo" class="renato_img">
+            <img src="assets/legiao_urbana.jpg" alt="Imagem do grupo" class="renato_img">
+        </div>
+        <p>Renato Russo nasceu em 1960 e mudou-se para Brasília ainda criança. Apaixonado por literatura e música, 
+            passou por uma doença óssea na adolescência que o deixou meses sem andar — período em que desenvolveu sua 
+            sensibilidade artística. Entrou no cenário musical criando letras profundas e formando sua primeira banda, 
+            o Aborto Elétrico.<br><br>
+            Em 1982, Renato formou a Legião Urbana, que se tornaria um ícone do rock nacional. Com músicas como “Tempo Perdido”, 
+            “Eduardo e Mônica” e “faroeste caboclo”, a banda marcou gerações. Seu estilo poético, crítico e emocional transformou 
+            Renato em um dos maiores letristas do Brasil.<br><br>
+            Nos anos 1990, sua saúde começou a se fragilizar, e Renato faleceu em 1996, aos 36 anos. Mesmo assim, sua obra permanece 
+            viva: ele é lembrado como um dos artistas mais influentes da música brasileira, com canções que continuam emocionando e 
+            inspirando milhões de pessoas.</p>
+        <img src="assets/renato_meorial.jpg" alt="Imagem de memorial" class="renato_memorial">
+    </div>
+
+    <div class="frase">
+        <p>“Quando tudo nos parece dar errado Acontecem coisas boas Que não teriam acontecido Se tudo tivesse dado certo.” </p>
+        <p style="color:#582E01">-Renato Russo</p>
+    </div>
+
+    <div class="tempo_perdido">
+        <img src="assets/tempo_perdido.jpg" alt="Imagem tempo perdido" class="tempo_img">
+        <div>
+         <p style="color: #5D4A21;">Tempo Perdido</p>
+        <button>Acesse Aqui</button>   
+        </div>
+        
+    </div>
+
+
+
 </body>
 
 <style>
@@ -17,12 +48,14 @@
     body{
     background-color: #9D8462;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 80;
     }    
 
-    .renato_russo_img{
+    .renato_img{
         border-radius: 20px;
         width: 230;
         height: 230;
+        margin-bottom: 10;
     }
 
     .legiao_urbana{
@@ -30,6 +63,53 @@
         width: 230;
         height: 230; 
         padding-top: 5;
+    }
+
+    .renato_memorial{
+        border-radius: 20px;
+        width: 262;
+        height: 466;
+    }
+    .texto{
+        display: flex;
+        align-items: center; 
+        gap: 10px; 
+        font-size: 25; 
+        padding-right: 80; 
+        color: #e2dcc5;
+    }
+
+    .titulo{
+        font-size: 70; 
+        color: #5D4A21;
+    }
+
+    .frase{
+        padding-left: 80;
+        font-size: 20;
+        color: #5D4A21;
+    }
+
+    .tempo_img{
+        border-radius: 20px;
+        width: 107;
+        height: 107;
+    }
+
+    .tempo_perdido{
+        display: flex;
+        align-items: center;
+        margin-top: 80;
+        font-size: 20;
+    }
+
+    button{
+        background-color: #5D4A21;
+        border-radius: 20px;
+        color: #ffff;
+        font-size: 20;
+        width: 146;
+        height: 53;
     }
 
 </style>
